@@ -13,7 +13,7 @@
         echo "Ihr Kommentar wurde erfolgreich ins Gästebuch eingetragen. Sie werden in Kürze weitergeleitet!";
         ?> 
         <script language="javascript" type="text/javascript">
-        window.setTimeout('window.location = "jumbotron-show.php"',2000);
+        window.setTimeout('window.location = "index.php"',2000);
         </script>
         <?php
     }
