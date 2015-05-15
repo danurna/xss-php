@@ -7,7 +7,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>Gästebuch</title>
 
@@ -27,7 +26,7 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="jumbotron-show.php">Ansehen</a></li>
+            <li role="presentation" class="active"><a href="index.php">Ansehen</a></li>
             <li role="presentation"><a href="jumbotron-add.php">Eintragen</a></li>
           </ul>
         </nav>
