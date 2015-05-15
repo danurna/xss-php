@@ -1,6 +1,6 @@
 <?php
   include('dbconnect.php');
-  $sql = "SELECT name, comment FROM guestbook";
+  $sql = "SELECT name, comment FROM guestbookA";
   $result = $db->query($sql);
 
   if ($result) {

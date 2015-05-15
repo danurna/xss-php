@@ -4,7 +4,7 @@
   if ($submit == 'create') {
     $name    = htmlspecialchars($_POST[name]);    
     $comment = htmlspecialchars($_POST[comment]);     
-    $query   = "INSERT INTO guestbook VALUES (NULL, '$name' ,'$comment')" ;         
+    $query   = "INSERT INTO guestbookB VALUES (NULL, '$name' ,'$comment')" ;         
     $result = $db->query($query);
     if (!$result) {
         echo "Error<br>";
