@@ -7,15 +7,18 @@
     $query   = "INSERT INTO guestbookB VALUES (NULL, '$name' ,'$comment')" ;         
     $result = $db->query($query);
     if (!$result) {
-        echo "Error<br>";
-        print mysqli_error($db);
+      print "Fehler. Der folgende Eintrag konnte nicht angelegt werden:";
+      print "<div class='col-lg-6'>";
+      print "<h4>" . $name . "</h4>";
+      print "<p>" . $comment . "</p>";
+      print "</div>";
     } else {
-        echo "Ihr Kommentar wurde erfolgreich ins Gästebuch eingetragen. Sie werden in Kürze weitergeleitet!";
-        ?> 
-        <script language="javascript" type="text/javascript">
-        window.setTimeout('window.location = "index.php"',2000);
-        </script>
-        <?php
+      print "Ihr Kommentar wurde erfolgreich ins Gästebuch eingetragen. Sie werden in Kürze weitergeleitet!";
+      ?> 
+      <script language="javascript" type="text/javascript">
+      window.setTimeout('window.location = "index.php"',2000);
+      </script>
+      <?php
     }
   } else {
     ?>
