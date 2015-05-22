@@ -2,8 +2,8 @@
   include('dbconnect.php');
   $submit = $_POST['submit'];
   if ($submit == 'create') {
-    $name    = htmlspecialchars($_POST[name]);    
-    $comment = htmlspecialchars($_POST[comment]);     
+    $name    = htmlEntities($_POST[name], ENT_QUOTES);    
+    $comment = htmlEntities($_POST[comment], ENT_QUOTES);     
     $query   = "INSERT INTO guestbookB VALUES (NULL, '$name' ,'$comment')" ;         
     $result = $db->query($query);
     if (!$result) {
