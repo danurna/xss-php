@@ -29,4 +29,4 @@ This repository contains an example of an XSS vulnerability, implemented in a ex
 The vulnerable version of the application tries to store the user input directly into the database. (Stored XSS, as the guestbook page simply prints the values take from the database.) In case the database is not able to store the data, an error is returned and the submitted message is printed. (Reflected XSS, as input leading to an error message will be printed as well and could contain executable code.)
 
 # Fix
-In the fixed version of this application simply `htmlentities( SubmittedValue, ENT_QUOTES )` is used to convert special characters into their html representation. (http://php.net/manual/de/function.htmlspecialchars.php)
+In the fixed version of this application simply `htmlentities( SubmittedValue, ENT_QUOTES )` is used to convert special characters into their html representation. (http://php.net/manual/de/function.htmlentities.php)
