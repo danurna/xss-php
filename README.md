@@ -1,5 +1,5 @@
 # xss-php
-This repository contains an example of an XSS vulnerability, implemented in a example guestbook application. The implementation uses PHP. 
+This repository contains an example guestbook application with a XSS vulnerability in its implementation (src-vuln). A fixed version is provided as well (src-fixed). This example was created for an security course at university. 
 
 # Application Overview
 
